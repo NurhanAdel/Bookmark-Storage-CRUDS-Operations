@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bookmark Hub</title>
+    <link rel="shortcut icon" href="IMGS/favicon.png" type="image/x-icon" />
+
+    <!-- ^ GOOGLE FONTS | Boldonse | Poppins-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arsenal+SC:ital,wght@0,400;0,700;1,400;1,700&family=Boldonse&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- ^ STYLE LINKS | -->
+    <link rel="stylesheet" href="CSS/all.min.css" />
+    <link rel="stylesheet" href="CSS/bootstrap.min.css" />
+    <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="stylesheet" href="CSS/media.css" />
+  </head>
+
+  <body>
+    <main>
+      <!-- * HEAD-PART |S T A R T -->
+      <section class="head text-light">
+        <div class="container">
+          <div class="main-title">
+            <span>Mark It. Keep It.</span>
+            <h1>
+              bookmark<span>hub</span><span>Where Your Bookmarks Belong</span>
+            </h1>
+            <p>
+              Organize and access your favorite websites effortlessly with a
+              bookmark storage platform. Save links and sync across devices so
+              you can easily find your important resources whenever you need
+              them.
+            </p>
+          </div>
+
+          <div class="row align-items-center gy-3">
+            <div class="col-sm-12 col-md-5">
+              <span>| Start building your organized online library today!</span>
+            </div>
+
+            <div class="col-sm-12 col-md-7">
+              <div class="search-input d-flex">
+                <div class="input-group flex-nowrap">
+                  <span class="input-group-text" id="addon-wrapping"
+                    ><i class="fa-regular fa-bookmark"></i
+                  ></span>
+                  <input
+                    type="search"
+                    class="form-control"
+                    placeholder="search for saved website by name ..."
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- * HEAD-PART | E N D -->
+      <!-- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>. -->
+      <!-- * FORM-PART | S T A R T -->
+      <section class="content text-light mt-4">
+        <div class="container">
+          <div class="form-holder mb-5">
+            <div class="input-info">
+              <div>
+                <label for="siteName">site name</label>
+                <input
+                  id="siteName"
+                  type="text"
+                  placeholder="mark site with descriptive name"
+                  class="form-control"
+                />
+
+                <p class="d-none">
+                  | Please Use 3 to 8 characters, all uppercase or all lowercase
+                  letters only.
+                </p>
+              </div>
+
+              <div>
+                <label for="siteURL">site url</label>
+                <input
+                  id="siteURL"
+                  type="text"
+                  placeholder="enter the website url here"
+                  class="form-control"
+                />
+
+                <p class="d-none">
+                  | Oops! That doesn’t look like a valid URL.
+                </p>
+              </div>
+            </div>
+
+            <label for="siteImage">save mark with image</label>
+            <input type="file" id="siteImage" class="form-control" />
+
+            <button>save mark</button>
+            <button class="d-none">update mark</button>
+          </div>
+
+          <i class="fa-solid fa-chevron-down"></i>
+        </div>
+      </section>
+      <!-- * FORM-PART | E N D  -->
+      <!-- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>. -->
+      <!-- * CARDS-PART | S T A R T -->
+      <section class="cards pb-5">
+        <div class="container">
+          <div class="cards-title text-light pt-5">
+            <h2>saved linkes |</h2>
+            <p>
+              Easily access all your saved bookmarks right here. Whether it’s an
+              article you loved, a resource you’ll need later, or a site you
+              visit often, your marks are neatly organized and ready whenever
+              you are.
+            </p>
+            <p>
+              No more lost links—just simple, secure access to the content that
+              matters most.
+            </p>
+          </div>
+
+          <div class="row g-4 mt-3 cards-container"></div>
+        </div>
+      </section>
+      <!-- * CARDS-PART | E N D -->
+      <!-- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>. -->
+      <!-- * SIGNATURE |S T A R T -->
+      <div class="signature text-light">
+        <span>designed by |nourhan A.Hessin _2025</span>
+      </div>
+      <!-- * SIGNATURE |E N D -->
+    </main>
+
+    <!-- ^ JS LINKS | -->
+    <script src="JS/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="JS/main.js"></script>
+  </body>
+</html>

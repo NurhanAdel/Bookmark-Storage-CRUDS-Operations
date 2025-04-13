@@ -1,0 +1,329 @@
+/* ^ D R Y  CONCEPT */
+:root {
+  font-size: 0.875rem;
+  --main-color: #ffc800;
+  --secondery-color: #acd3a8;
+  --bs-body-color: rgba(48, 32, 23, 0.6);
+  --text-color: #302017;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+h1,
+h2,
+.main-title > span {
+  font-family: "Boldonse", system-ui;
+}
+span,
+a {
+  display: inline-block;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.container {
+  width: 80%;
+}
+
+main {
+  background-image: linear-gradient(#00000092, #00000092),
+    url("../IMGS/main-bg.avif");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* * HEAD-PART |S T A R T */
+.main-title {
+  position: relative;
+  isolation: isolate;
+  padding-top: 3.125rem;
+}
+
+.main-title::before {
+  content: " ";
+  width: 25%;
+  height: 100%;
+  background-color: rgb(172, 211, 168, 0.2);
+  border-top: 10px solid var(--main-color);
+  position: absolute;
+  top: 0rem;
+  left: -1.875rem;
+  z-index: -1;
+}
+.main-title > span {
+  font-size: 0.8125rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: var(--secondery-color);
+  letter-spacing: 0.1875rem;
+  opacity: 0.3;
+}
+
+.main-title h1 {
+  text-transform: uppercase;
+  letter-spacing: 0.3125rem;
+  line-height: 1.3;
+}
+
+.main-title h1 span:first-child {
+  letter-spacing: 0.625rem;
+}
+
+.main-title h1 span:last-child {
+  width: 60%;
+  font-size: 0.5rem;
+  letter-spacing: 0.125rem;
+  text-transform: uppercase;
+  line-height: 1.8;
+  background-image: linear-gradient(
+    var(--secondery-color),
+    var(--main-color),
+    var(--secondery-color)
+  );
+  background-clip: text;
+  color: transparent;
+}
+
+.main-title p {
+  font-size: 0.875rem;
+  text-align: justify;
+  padding-top: 1.25rem;
+}
+
+.head .row > div span {
+  font-size: 0.8125rem;
+  text-transform: uppercase;
+  letter-spacing: 0.0625rem;
+  text-align: justify;
+}
+
+.search-input i {
+  color: var(--main-color);
+}
+
+.search-input input,
+.input-group-text {
+  background-color: transparent;
+  border-color: var(--secondery-color);
+}
+
+.search-input .form-control:focus {
+  background-color: transparent;
+  box-shadow: none;
+  outline: none;
+  border-color: var(--secondery-color);
+  color: #fff;
+  font-weight: 200;
+}
+
+input[type="search"]::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 0.6875rem;
+  width: 0.6875rem;
+  background-image: url("../IMGS/x-icon.png");
+  background-size: cover;
+  cursor: pointer;
+}
+
+.search-input input::placeholder {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 0.5rem;
+  letter-spacing: 0.125rem;
+}
+
+/* * HEAD-PART |E N D */
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* * FORM-PART |S T A R T */
+.content .form-holder {
+  border: 1px solid var(--secondery-color);
+  padding: 1.25rem;
+  border-radius: 0.625rem;
+}
+
+.form-holder label {
+  font-size: 0.8125rem;
+  text-transform: uppercase;
+  letter-spacing: 0.125rem;
+}
+
+.form-holder input {
+  margin-bottom: 0.9375rem;
+}
+
+.form-holder input::placeholder {
+  font-size: 0.75rem;
+  text-transform: capitalize;
+  color: rgba(48, 32, 23, 0.6);
+}
+
+.form-holder .form-control,
+.form-holder.form-control:focus {
+  border: 5px solid var(--secondery-color);
+  box-shadow: none;
+  font-weight: 500;
+  font-size: 0.8125rem;
+  color: var(--text-color);
+}
+
+.form-holder p {
+  font-size: 0.625rem;
+  text-transform: capitalize;
+  color: #ff5100;
+  font-weight: 600;
+}
+.form-holder button {
+  width: 100%;
+  border: 2px solid var(--secondery-color);
+  border-radius: 0.3125rem;
+  background-color: var(--main-color);
+  color: var(--text-color);
+  font-size: 0.8125rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.125rem;
+  padding: 0.625rem 0.9375rem;
+  margin-top: 0.625rem;
+  transition: box-shadow 500ms;
+}
+
+.form-holder button:hover {
+  box-shadow: inset 0.1875rem 0.1875rem 0.625rem #0000006b;
+}
+
+.content i {
+  color: var(--main-color);
+  font-size: 1.4375rem;
+}
+
+/* * FORM-PART |E N D */
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* * CARDS-PART |S T A R T */
+
+.cards {
+  background-color: rgba(172, 211, 168, 0.1);
+  backdrop-filter: blur(30px);
+  border-top: 1px solid var(--secondery-color);
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+}
+
+.cards-title p {
+  max-width: 37.5rem;
+  font-size: 0.8125rem;
+  text-align: justify;
+}
+
+.cards-title h2 {
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1875rem;
+}
+
+.img-holder {
+  position: relative;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.mark-cards img {
+  width: 100%;
+  aspect-ratio: 3/4;
+  object-fit: cover;
+  transition: transform 1s;
+}
+
+.img-holder:hover img {
+  transform: scale(1.3);
+}
+
+.cards-container {
+  width: 90%;
+  margin-inline: auto;
+}
+
+.layer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  top: 0px;
+  left: 0rem;
+}
+
+.layer i {
+  margin: 1.25rem 0px 0px 20px;
+  font-size: 0.8125rem;
+  color: var(--main-color);
+  opacity: 0.8;
+}
+
+.layer > div h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 0rem;
+  color: #fff;
+}
+
+.layer > div a {
+  font-size: 0.875rem;
+  font-weight: 300;
+  text-transform: capitalize;
+  letter-spacing: 0.1875rem;
+}
+
+.layer div:last-child {
+  position: absolute;
+  bottom: 5%;
+  left: 0rem;
+  right: 0rem;
+}
+
+.layer button {
+  width: 35%;
+  display: block;
+  background-color: rgba(172, 211, 168, 0.2);
+  backdrop-filter: blur(0.9375rem);
+  border: none;
+  border-left: 5px solid var(--main-color);
+  color: #fff;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 1.25rem;
+  margin-bottom: 0.625rem;
+  transition: width 600ms;
+}
+
+.layer button:hover {
+  width: 100%;
+}
+/* * CARDS-PART |E N D*/
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* * SIGNATURE |S T A R T */
+.signature {
+  font-family: "Arsenal SC", sans-serif;
+  position: fixed;
+  right: -10.3125rem;
+  bottom: 33%;
+  font-size: 0.6875rem;
+  text-transform: capitalize;
+  letter-spacing: 0.3125rem;
+  transform: rotate(270deg);
+}
+/* * SIGNATURE |E N D */
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* * SWEET ALERT | */
+.alert-button {
+  background-color: var(--main-color);
+  border: 5px solid var(--secondery-color);
+}

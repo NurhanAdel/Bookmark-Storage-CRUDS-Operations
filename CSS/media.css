@@ -1,0 +1,213 @@
+@media screen and (min-width: 400px) {
+  .main-title h1 {
+    width: 70%;
+  }
+}
+
+/* ^ >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+@media screen and (min-width: 576px) {
+  /* * HEAD-PART |*/
+  :root {
+    font-size: 1rem;
+  }
+  .main-title {
+    width: 100%;
+  }
+
+  .main-title::before {
+    width: 15%;
+  }
+
+  .main-title h1 {
+    width: 80%;
+  }
+
+  .main-title h1 span:last-child {
+    width: 50%;
+  }
+
+  .search-input input::placeholder {
+    font-size: 0.5rem;
+    letter-spacing: 0.125rem;
+  }
+
+  .head .row > div span {
+    font-size: 0.625rem;
+  }
+
+  /* ___________________________________________________ */
+  /* * CARDS-PART | */
+  .layer i {
+    font-size: 1rem;
+  }
+
+  .layer > div h3 {
+    font-size: 1.5625rem;
+  }
+
+  .layer > div a {
+    font-size: 1rem;
+  }
+
+  .layer button {
+    font-size: 0.875rem;
+    padding: 1.875rem;
+  }
+}
+
+/* ^ >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+@media screen and (min-width: 768px) {
+  /* * HEAD-PART |*/
+  .main-title {
+    width: 70%;
+  }
+}
+
+/* ___________________________________________________ */
+/* * FORM-PART | */
+:root {
+  font-size: 0.875rem;
+}
+
+.form-holder input::placeholder,
+.form-holder .form-control {
+  font-size: 0.6875rem;
+}
+
+.form-holder button {
+  width: 100%;
+}
+
+/* ___________________________________________________ */
+/* * CARDS-PART | */
+.layer > div h3 {
+  font-size: 1.4375rem;
+}
+
+.layer button {
+  padding: 1.25rem;
+}
+/* ^ >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+@media screen and (min-width: 830px) {
+  /* * HEAD-PART |*/
+  .main-title h1 {
+    width: 70%;
+  }
+
+  .main-title h1 span:last-child {
+    width: 60%;
+    font-size: 0.625rem;
+    letter-spacing: 0.125rem;
+  }
+
+  .main-title p,
+  .main-title > span {
+    width: 100%;
+  }
+}
+/* ^ >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+@media screen and (min-width: 992px) {
+  /* * CARDS-PART | */
+  .layer i {
+    font-size: 0.8125rem;
+  }
+
+  .layer > div h3 {
+    font-size: 1.25rem;
+  }
+
+  .layer > div a {
+    font-size: 0.8125rem;
+  }
+
+  .layer button {
+    font-size: 0.625rem;
+    padding: 0.625rem;
+  }
+}
+/* ^ >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+@media screen and (min-width: 1000px) {
+  /* * HEAD-PART |*/
+  .main-title h1 {
+    width: 50%;
+  }
+}
+
+/* ^ >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+@media screen and (min-width: 1200px) {
+  /* * HEAD-PART |*/
+  :root {
+    font-size: 1.125rem;
+  }
+
+  .search-input input::placeholder {
+    font-size: 0.625rem;
+    letter-spacing: 0.125rem;
+  }
+
+  .head .row > div span {
+    font-size: 0.8125rem;
+  }
+
+  .search-input {
+    width: 85%;
+  }
+
+  /* ___________________________________________________ */
+  /* * FORM-PART | */
+  .form-holder {
+    width: 83%;
+    margin-inline: auto;
+  }
+
+  .form-holder .input-info {
+    display: flex;
+    justify-content: space-between;
+    gap: 1.25rem;
+  }
+
+  .input-info div {
+    width: 100%;
+  }
+
+  .content i {
+    font-size: 1.6875rem;
+  }
+
+  /* ___________________________________________________ */
+  /* * CARDS-PART | */
+
+  .layer > div h3 {
+    font-size: 1.125rem;
+  }
+}
+/* ^ >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+@media screen and (min-width: 1400px) {
+  /* * HEAD-PART |*/
+  .main-title::before {
+    width: 10%;
+  }
+
+  .main-title h1 {
+    width: 50%;
+  }
+
+  .main-title h1 span:last-child {
+    width: 60%;
+    font-size: 0.625rem;
+    letter-spacing: 0.125rem;
+  }
+  /* ___________________________________________________ */
+  /* * CARDS-PART | */
+  .layer i {
+    font-size: 0.875rem;
+  }
+
+  .layer > div h3 {
+    font-size: 1.25rem;
+  }
+
+  .layer > div a {
+    font-size: 0.8125rem;
+  }
+}
