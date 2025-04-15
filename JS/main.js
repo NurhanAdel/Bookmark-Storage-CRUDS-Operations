@@ -44,10 +44,30 @@ var siteUrlRegex = /^(https?:\/\/|www\.)[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}(\/\S*)?$/;
 // * CRUDS Operations | C R E A T E
 function addBookMark() {
   if (validate(siteNameRegex, siteName) && validate(siteUrlRegex, siteURL)) {
+    var imageName = "";
+    if (siteImage.files.length > 0) {
+      imageName = siteImage.files[0].name;
+    }
+
+    var allowedImageNames = [
+      "test-1.avif",
+      "test-2.avif",
+      "test-3.avif",
+      "test-4.avif",
+    ];
+    var defaultImage = `https://images.unsplash.com/photo-1516108317508-6788f6a160e4?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D`;
+
+    var imagePath = "";
+    if (allowedImageNames.includes(imageName)) {
+      imagePath = `IMGS/IMGS-TEST/${imageName}`;
+    } else {
+      imagePath = defaultImage;
+    }
+
     var bookMarkCard = {
       name: siteName.value,
       url: siteURL.value,
-      image: `IMGS/IMGS-TEST/${siteImage.files[0].name}`,
+      image: imagePath,
     };
 
     bookMarkList.push(bookMarkCard);
@@ -106,6 +126,9 @@ function clearInputs() {
   siteName.value = "";
   siteURL.value = "";
   siteImage.value = null;
+
+  siteName.classList.remove("is-valid");
+  siteURL.classList.remove("is-valid");
 }
 
 // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
