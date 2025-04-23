@@ -144,16 +144,29 @@ function resetValues(i) {
 }
 
 function updateCard() {
-  bookMarkList[updateIndex].name = siteName.value;
-  bookMarkList[updateIndex].url = siteURL.value;
+  if (validate(siteNameRegex, siteName) && validate(siteUrlRegex, siteURL)) {
+    bookMarkList[updateIndex].name = siteName.value;
+    bookMarkList[updateIndex].url = siteURL.value;
 
-  localStorage.setItem("BookMark", JSON.stringify(bookMarkList));
-  cardsContainer.innerHTML = "";
-  displayAllCards();
-  clearInputs();
+    localStorage.setItem("BookMark", JSON.stringify(bookMarkList));
+    cardsContainer.innerHTML = "";
+    displayAllCards();
+    clearInputs();
 
-  saveMark.classList.remove("d-none");
-  updateButton.classList.add("d-none");
+    saveMark.classList.remove("d-none");
+    updateButton.classList.add("d-none");
+    return;
+  }
+
+  Swal.fire({
+    icon: "error",
+    title: "Oops...",
+    text: "Something went wrong!",
+    width: "250px",
+    customClass: {
+      confirmButton: "alert-button",
+    },
+  });
 }
 
 // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
